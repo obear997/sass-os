@@ -140,5 +140,8 @@ a{ color: $base-a-color; text-decoration:none; -webkit-tap-highlight-color:rgba(
 
 
 /*网站地图*/
-.ul_sitemap li{ border-bottom:dotted 1px #ddd; padding:5px 0px;}
-.ul_sitemap li strong{ width:90px; display:inline-block;}
+.ul_sitemap{
+  li{ border-bottom:dotted 1px #ddd; padding:5px 0px;
+    strong{ width:90px; display:inline-block;}
+  }
+}
