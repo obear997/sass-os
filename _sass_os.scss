@@ -42,6 +42,16 @@ $font-url           : '../fonts'; //设置字体存放目录
 }
 
 
+//*
+//*设置文本可选
+//*
+@mixin user-select($value: none){
+  -webkit-user-select: $value;
+     -moz-user-select: $value;
+          user-select: $value;
+}
+
+
 //box-sizing 盒模型计算方式
 //*
 //* @params        content-box padding-box border-box       
@@ -228,16 +238,6 @@ $font-url           : '../fonts'; //设置字体存放目录
 //多行文本，默认截取2行
 @mixin text-xline($line: 2){
 	text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: $line; -webkit-box-orient: vertical;
-}
-
-
-//*
-//*设置文本可选
-//*
-@mixin user-select{
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 
